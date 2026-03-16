@@ -92,7 +92,42 @@
     `;
   }
 
-  /* ── 4. FAQ toggle (shared utility) ── */
+  /* ── 5. Sticky mobile enquire button ── */
+  const sticky = document.createElement('a');
+  sticky.href = '../index.html#booking';
+  sticky.textContent = 'Enquire Now';
+  sticky.setAttribute('aria-label', 'Enquire about a driving lesson');
+  sticky.style.cssText = `
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--amber);
+    color: var(--navy);
+    font-family: var(--body, sans-serif);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    letter-spacing: 0.03em;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+  `;
+  document.body.appendChild(sticky);
+
+  // Only show on mobile (under 768px) and hide when near footer
+  function updateStickyVisibility() {
+    const isMobile = window.innerWidth < 768;
+    const footer = document.querySelector('footer');
+    const nearFooter = footer
+      ? window.scrollY + window.innerHeight >= footer.offsetTop - 80
+      : false;
+    sticky.style.display = (isMobile && !nearFooter) ? 'block' : 'none';
+  }
+
+  window.addEventListener('scroll', updateStickyVisibility, { passive: true });
+  window.addEventListener('resize', updateStickyVisibility);
+  updateStickyVisibility();
   window.toggleFaq = function(btn) {
     const item = btn.parentElement;
     const isOpen = item.classList.contains('open');
