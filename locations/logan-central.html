@@ -85,7 +85,7 @@
   </div>
 
   <!-- HERO -->
-  <div class="hero">
+  <div class="hero hero-photo">
     <img
       src="../Images/driving-instructor-logan-qld-test-my-drive.png"
       alt="Test My Drive instructor car on a Logan QLD road during a driving lesson"
@@ -181,19 +181,13 @@
         <div style="font-family:var(--condensed);font-size:clamp(1.6rem,5vw,2.2rem);font-weight:800;color:var(--navy);">Meet Your Instructor</div>
       </div>
 
-      <!-- SWAP POINT: render from data.json via JS when system is ready -->
-      <div style="max-width:280px;margin:0 auto;background:var(--white);border:1.5px solid var(--lightgrey);border-radius:14px;padding:2rem;text-align:center;">
-        <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid var(--amber);margin:0 auto 1rem;">
-          <img src="../Images/Ali.jpg" alt="Ali, driving instructor Test My Drive Logan QLD" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
-        </div>
-        <div style="font-family:var(--condensed);font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:1.25rem;">Ali</div>
-        <!-- SWAP POINT: update to data.json JS system when ready -->
-        <a href="../index.html#booking-ali"
-           class="btn-primary"
-           style="display:block;text-align:center;padding:0.85rem;">
-          📅 Book With Ali
-        </a>
+      <!-- Rendered by tmd.js from data.json -->
+      <div id="tmd-instructors">
+        <div style="text-align:center;color:var(--grey);font-size:0.85rem;padding:2rem 0;">Loading instructor...</div>
       </div>
+
+      <!-- Pricing rendered by tmd.js below instructor -->
+      <div id="tmd-pricing"></div>
 
     </div>
   </div>
@@ -296,14 +290,9 @@
     <p style="font-size:0.7rem;opacity:0.4;">© 2026 Test My Drive. All rights reserved.</p>
   </footer>
 
-  <script>
-    function toggleFaq(btn) {
-      const item = btn.parentElement;
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    }
-  </script>
+  <!-- Suburb declaration — tmd.js uses this to filter instructors and render content -->
+  <script>const TMD_SUBURB = "Logan Central";</script>
+  <script src="../tmd.js" defer></script>
 
 </body>
 </html>
