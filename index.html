@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test My Drive — Driving Lessons South Brisbane | Qualified Instructor</title>
+  <meta name="description" content="Driving lessons in South Brisbane, West End, Woolloongabba, Annerley, Moorooka, Greenslopes and surrounds. Patient, qualified instructor. Manual and automatic. Book online today." />
+  <meta name="keywords" content="driving lessons south Brisbane, driving instructor south Brisbane, driving school Brisbane, learner driver lessons, test preparation Brisbane, manual driving lessons, Woolloongabba driving instructor, Annerley driving lessons, West End driving school" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.testmydrive.com.au/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Test My Drive — Driving Lessons South Brisbane" />
+  <meta property="og:description" content="Patient, qualified driving instruction across South Brisbane. Manual and automatic. Book a lesson today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.testmydrive.com.au/" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DrivingSchool",
+    "name": "Test My Drive",
+    "url": "https://www.testmydrive.com.au",
+    "description": "Professional driving instruction for learners and adults across South Brisbane and surrounds. Manual and automatic lessons available.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Brisbane",
+      "addressRegion": "QLD",
+      "addressCountry": "AU"
+    },
+    "areaServed": [
+      "South Brisbane", "West End", "Woolloongabba", "Annerley", "Yeronga",
+      "Moorooka", "Salisbury", "Rocklea", "Tarragindi", "Greenslopes",
+      "Holland Park", "Mount Gravatt", "Sunnybank", "Runcorn", "Coopers Plains"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 07:00-19:00",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#" onclick="showPage('home')">
+      <img src="Images/logo.png" alt="Test My Drive" style="height:76px;width:auto;display:block;" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
+      <li><a href="#" onclick="showPage('locations')">Locations</a></li>
+      <li><a href="#" onclick="showPage('instructor')">Meet Your Instructor</a></li>
+      <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+      <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      <li><a href="#" onclick="showPage('booking')">Enquire</a></li>
+      <li><a href="#" class="nav-cta" onclick="showPage('instructor')">Reserve</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" onclick="showPage('home');closeMenu()">Home</a>
+    <a href="#" onclick="showPage('pricing');closeMenu()">Pricing</a>
+    <a href="#" onclick="showPage('locations');closeMenu()">Locations</a>
+    <a href="#" onclick="showPage('instructor');closeMenu()">Meet Your Instructor</a>
+    <a href="#" onclick="showPage('faq');closeMenu()">FAQ</a>
+    <a href="#" onclick="showPage('contact');closeMenu()">Contact</a>
+    <a href="#" onclick="showPage('booking');closeMenu()">Enquire</a>
+    <a href="#" class="mob-cta" onclick="showPage('instructor');closeMenu()">Reserve Your Spot</a>
+  </div>
+
+  <!-- ════════════════════════════════
+       HOME
+  ════════════════════════════════ -->
+  <div id="page-home" class="page active">
+
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-eyebrow fade-up">📍 Driving Lessons · South Brisbane &amp; Surrounds</div>
+        <h1 class="fade-up delay-1">Pass Your Test.<br>Drive with <span>Confidence.</span></h1>
+        <p class="hero-sub fade-up delay-2">At TMD Driving School, we proudly provide professional and patient driving lessons across Logan and South Brisbane. Our goal is to help learners become safe, confident, and independent drivers while preparing them for their Queensland driving test.<br><br>We offer flexible pickup and drop-off from home, school, or work within our service areas.</p>
+        <div class="hero-buttons fade-up delay-3">
+          <a href="#" onclick="showPage('instructor')"  class="btn-primary">Reserve Your Spot</a>
+          <a href="#" class="btn-outline" onclick="showPage('pricing')">See Pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-bar">
+      <div class="trust-item"><span class="icon">✅</span> Licensed &amp; Insured</div>
+      <div class="trust-item"><span class="icon">🚗</span> Automatic Transmission</div>
+      <div class="trust-item"><span class="icon">📍</span> South Brisbane Area</div>
+      <div class="trust-item"><span class="icon">⭐</span> Patient &amp; Professional</div>
+    </div>
+
+    <!-- Why us feature cards -->
+    <div style="padding:3rem 1.5rem;max-width:100%;">
+      <div style="max-width:860px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:2rem;">
+          <div class="section-label">Why Test My Drive</div>
+          <div class="section-title">Good Instruction Pays Off Long After the Test</div>
+          <p class="section-sub" style="margin:0.75rem auto 0;max-width:520px;">Anyone can teach you to pass. We teach you to drive confidently, safely, and for life. The skills you build here stay with you every time you get behind the wheel.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;">
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:14px;padding:1.75rem 1.25rem;text-align:center;">
+            <div style="width:52px;height:52px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 1rem;">🎯</div>
+            <div style="font-family:var(--condensed);font-size:1rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem;">High Pass Rate</div>
+            <p style="font-size:0.8rem;color:var(--grey);line-height:1.5;">Focused on the specific manoeuvres and routes examiners look for.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:14px;padding:1.75rem 1.25rem;text-align:center;">
+            <div style="width:52px;height:52px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 1rem;">🤝</div>
+            <div style="font-family:var(--condensed);font-size:1rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem;">Patient Instructors</div>
+            <p style="font-size:0.8rem;color:var(--grey);line-height:1.5;">No rushing. No pressure. Learn at the pace that suits you.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:14px;padding:1.75rem 1.25rem;text-align:center;">
+            <div style="width:52px;height:52px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 1rem;">📍</div>
+            <div style="font-family:var(--condensed);font-size:1rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem;">We Come to You</div>
+            <p style="font-size:0.8rem;color:var(--grey);line-height:1.5;">Pickup from home, school, or work. No need to travel.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:14px;padding:1.75rem 1.25rem;text-align:center;">
+            <div style="width:52px;height:52px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 1rem;">📅</div>
+            <div style="font-family:var(--condensed);font-size:1rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem;">Easy Online Booking</div>
+            <p style="font-size:0.8rem;color:var(--grey);line-height:1.5;">Pick your time online in seconds. Available 7 days a week.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="background:var(--offwhite);border-top:1px solid var(--lightgrey);border-bottom:1px solid var(--lightgrey);max-width:100%;padding:3.5rem 1.5rem;">
+      <div style="max-width:860px;margin:0 auto;">
+      <div class="section-label">What We Offer</div>
+      <div class="section-title">Lessons & Test Packages</div>
+      <p class="section-sub">Pay as you go, or book a complete test day package.</p>
+
+      <div class="lessons-grid">
+        <div class="lesson-card">
+          <div class="lesson-icon">🟢</div>
+          <div class="lesson-title">1 Hour Car Lesson</div>
+          <div class="lesson-desc">Pay as you go. Perfect for beginners, refreshers, or anyone wanting to try before committing to a package. Automatic transmission.</div>
+          <div class="lesson-price">$80 <span>/ hour</span></div>
+          <a href="#" class="btn-primary" onclick="showPage('booking')" style="margin-top:1rem;display:inline-block;">Enquire Now</a>
+        </div>
+        <div class="lesson-card featured">
+          <div class="lesson-icon">📋</div>
+          <div class="lesson-title">Car Test Pack — Standard</div>
+          <div class="lesson-desc">45 min lesson before your test, car hire for the test, plus pickup and drop off (weekdays only).</div>
+          <div class="lesson-price">$210 <span>/ test package</span></div>
+          <a href="#" class="btn-primary" onclick="showPage('booking')" style="margin-top:1rem;display:inline-block;background:var(--navy);color:var(--white);">Enquire Now</a>
+        </div>
+        <div class="lesson-card">
+          <div class="lesson-icon">🎯</div>
+          <div class="lesson-title">Car Test Pack — Advanced</div>
+          <div class="lesson-desc">105 min lesson before your test, car hire for the test, plus pickup and drop off (weekdays only).</div>
+          <div class="lesson-price">$295 <span>/ test package</span></div>
+          <a href="#" class="btn-primary" onclick="showPage('booking')" style="margin-top:1rem;display:inline-block;">Enquire Now</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div style="background:var(--offwhite);border-top:1px solid var(--lightgrey);border-bottom:1px solid var(--lightgrey);padding:3.5rem 1.5rem;">
+      <div style="max-width:860px;margin:0 auto;">
+
+        <!-- Header -->
+        <div style="text-align:center;margin-bottom:2rem;">
+          <div class="section-label">What Students Say</div>
+          <div class="section-title">Real Reviews from Real Learners</div>
+          <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem;margin-top:0.75rem;">
+            <span style="color:var(--amber);font-size:1.1rem;">★★★★★</span>
+            <span style="font-family:var(--condensed);font-size:1.1rem;font-weight:800;color:var(--navy);">4.6</span>
+            <span style="font-size:0.82rem;color:var(--grey);">· 74 ratings</span>
+          </div>
+        </div>
+
+        <!-- Review cards -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Anna</div>
+                <div style="font-size:0.7rem;color:var(--grey);">10 Feb 2026</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Thank you Ali. I will remember all the words you said. You're very helpful and straightforward.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Sabrina</div>
+                <div style="font-size:0.7rem;color:var(--grey);">9 Feb 2026</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Ali is a very switched-on and alert instructor who will give you clear, calm feedback on your driving, as well as amazing advice and tips for test day. Would definitely recommend.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Selim</div>
+                <div style="font-size:0.7rem;color:var(--grey);">12 Jan 2026</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Amazing instructor, he doesn't sugar coat anything. Tells you what you need to hear without hesitation. Always on point.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Ryan</div>
+                <div style="font-size:0.7rem;color:var(--grey);">15 Nov 2025</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Ali was phenomenal. Extremely supportive, asked plenty of questions to understand where my current skill level was and had a fantastic blend of explanations, suggestions and techniques. Could not recommend him more.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Nyang</div>
+                <div style="font-size:0.7rem;color:var(--grey);">7 Nov 2025</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Great driving instructor! He was very calm during the entire lesson which helped me feel so much more comfortable and confident on the road. He also provided great and valuable feedback and advice. Would highly recommend!</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Rhonalyn</div>
+                <div style="font-size:0.7rem;color:var(--grey);">22 Nov 2025</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Very calm. He explained well what you need to do on the road and what things need to improve.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Jan Chester</div>
+                <div style="font-size:0.7rem;color:var(--grey);">31 Oct 2025</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Ali is very professional and helpful.</p>
+          </div>
+
+          <div style="background:var(--white);border:1.5px solid var(--lightgrey);border-radius:10px;padding:1.25rem;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;">
+              <div>
+                <div style="font-weight:700;color:var(--navy);font-size:0.9rem;">Stephiana</div>
+                <div style="font-size:0.7rem;color:var(--grey);">21 Oct 2025</div>
+              </div>
+              <span style="color:var(--amber);font-size:0.85rem;">★★★★★</span>
+            </div>
+            <p style="font-size:0.82rem;color:var(--grey);line-height:1.65;">Ali is an excellent driving instructor, patient, professional, and very supportive. He explains everything clearly and makes learning to drive an enjoyable experience. I've already gained so much confidence and can't wait to learn lots more. Thank you Ali!</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--navy);padding:2.5rem 1.5rem;text-align:center;">
+      <div style="max-width:500px;margin:0 auto;">
+        <div style="font-family:var(--condensed);font-size:1.5rem;font-weight:800;color:var(--white);margin-bottom:0.5rem;">Got Questions?</div>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:1.25rem;">We've answered the most common ones about lessons, pricing, and what to expect.</p>
+        <a href="#" class="btn-primary" onclick="showPage('faq')">View FAQ</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════════════════════
+       PRICING
+  ════════════════════════════════ -->
+  <div id="page-pricing" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Simple, Fair Rates</h2>
+        <p style="color:var(--amber);">Good instruction pays for itself.</p>
+      </div>
+    </div>
+
+    <div class="pricing-section">
+      <div class="pricing-inner">
+        <div class="section-title">Choose What Works For You</div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-label">1 Hour Car Lesson</div>
+            <div class="pricing-amount">$80</div>
+            <div class="pricing-duration">per hour · automatic</div>
+            <div class="pricing-desc">Pay as you go. Perfect for a trial lesson or one-off refresher. Payment required to confirm your booking.</div>
+            <a href="#" onclick="showPage('instructor')"  class="btn-primary" style="margin-top:1.25rem;display:inline-block;">Reserve Your Spot</a>
+          </div>
+          <div class="pricing-card highlight">
+            <div class="pricing-label">Car Test Pack — Standard</div>
+            <div class="pricing-amount">$210</div>
+            <div class="pricing-duration">test package · weekdays</div>
+            <div class="pricing-desc">Includes a 45 min lesson before your test, car hire for the test, and pickup and drop off (weekdays only).</div>
+            <a href="#" onclick="showPage('instructor')"  class="btn-primary" style="margin-top:1.25rem;display:inline-block;">Reserve Your Spot</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-label">Car Test Pack — Advanced</div>
+            <div class="pricing-amount">$295</div>
+            <div class="pricing-duration">test package · weekdays</div>
+            <div class="pricing-desc">Includes a 105 min lesson before your test, car hire for the test, and pickup and drop off (weekdays only).</div>
+            <a href="#" onclick="showPage('instructor')"  class="btn-primary" style="margin-top:1.25rem;display:inline-block;">Reserve Your Spot</a>
+          </div>
+        </div>
+
+        <p style="color:var(--grey);font-size:0.75rem;margin-top:1.5rem;text-align:center;">All lessons are automatic transmission. Your instructor will be in touch to confirm your booking and arrange payment.</p>
+      </div>
+    </div>
+
+    <div class="section" style="text-align:center;">
+      <div class="section-title">Ready to Get Started?</div>
+      <p class="section-sub" style="margin:0.5rem auto 1.5rem;">Get in touch and we'll find the right option for you.</p>
+      <a href="#" onclick="showPage('booking')" class="btn-primary">Enquire Now</a>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       MEET YOUR INSTRUCTORS
+  ════════════════════════════════ -->
+  <div id="page-instructor" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Meet Your Instructor</h2>
+        <p style="color:var(--amber);">Book Direct with Ali</p>
+        <p>Qualified, patient, and focused on getting you to pass first time.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div style="max-width:680px;margin:0 auto;">
+
+        <!-- ── INSTRUCTOR 1 ── -->
+        <div style="background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:14px;padding:2rem;display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;">
+          <div style="width:120px;height:120px;border-radius:50%;flex-shrink:0;overflow:hidden;border:3px solid var(--amber);">
+            <img src="Images/Ali.jpg" alt="Ali, driving instructor at Test My Drive" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
+          </div>
+          <div style="flex:1;min-width:200px;">
+            <div class="section-label" style="margin-bottom:0.3rem;">Instructor</div>
+            <div class="section-title" style="margin-bottom:0.5rem;">Ali</div>
+            <p style="font-size:0.88rem;color:var(--grey);line-height:1.7;margin-bottom:1rem;">Hi, I'm Ali, the founder and instructor here at Test My Drive. My goal is pretty simple: I want to help you become a safe, confident, and independent driver. I know getting behind the wheel for the first time can be a bit stressful, so I keep my lessons calm and patient. No pressure. Just a supportive environment where you can learn at your own pace.</p>
+            <p style="font-size:0.88rem;color:var(--grey);line-height:1.7;margin-bottom:1rem;">I work with everyone from absolute beginners to international drivers getting used to Australian roads and rules. For me it's not just about helping you pass the test. It's about making sure you're actually ready to drive safely for the rest of your life.</p>
+            <div style="background:rgba(245,166,35,0.08);border:1px solid rgba(245,166,35,0.3);border-radius:8px;padding:0.75rem 1rem;margin-bottom:1rem;">
+              <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.4rem;">🌐 Languages Spoken</div>
+              <div style="font-size:0.82rem;color:var(--navy);font-weight:600;">English · Urdu · Hindi · Dari · Persian</div>
+              <div style="font-size:0.75rem;color:var(--grey);margin-top:0.25rem;">Learning in your own language makes a real difference.</div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:1rem;">
+              <span class="about-badge">✅ Fully Licensed Instructor</span>
+              <span class="about-badge">✅ Blue Card Holder</span>
+              <span class="about-badge">✅ Fully Insured</span>
+              <span class="about-badge">✅ Automatic Transmission</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats" style="margin-top:1.5rem;">
+          <div class="stat-box"><div class="stat-number">804<span>+</span></div><div class="stat-label">Completed Lessons</div></div>
+          <div class="stat-box"><div class="stat-number">74<span>+</span></div><div class="stat-label">Ratings</div></div>
+          <div class="stat-box"><div class="stat-number">4.6<span>★</span></div><div class="stat-label">Average Rating</div></div>
+          <div class="stat-box"><div class="stat-number">5<span>+</span></div><div class="stat-label">Languages Spoken</div></div>
+        </div>
+
+        <div style="margin-top:2rem;text-align:center;">
+          <div style="font-family:var(--condensed);font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:0.5rem;">Ready to Book?</div>
+          <p style="font-size:0.85rem;color:var(--grey);margin-bottom:1.25rem;">Pick a time that suits you. Ali will confirm and give you a quick call before your first lesson.</p>
+          <a href="#" onclick="showPage('booking-ali')" class="btn-primary" style="display:inline-block;font-size:1rem;padding:1rem 2.5rem;">
+            📅 Book With Ali
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <div id="page-contact" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Get In Touch</h2>
+        <p style="color:var(--amber);">We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div style="max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;">
+
+        <a href="tel:0457277629" style="display:flex;align-items:center;gap:1.25rem;background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:12px;padding:1.5rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--lightgrey)'">
+          <div style="width:48px;height:48px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">📞</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);margin-bottom:0.2rem;">Phone</div>
+            <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);">0457 277 629</div>
+            <div style="font-size:0.75rem;color:var(--grey);margin-top:0.1rem;">Call or text to enquire or book</div>
+          </div>
+        </a>
+
+        <a href="/cdn-cgi/l/email-protection#6e070008012e1a0b1d1a03170a1c07180b400d0103400f1b" style="display:flex;align-items:center;gap:1.25rem;background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:12px;padding:1.5rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--lightgrey)'">
+          <div style="width:48px;height:48px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">✉️</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);margin-bottom:0.2rem;">Email</div>
+            <div style="font-family:var(--condensed);font-size:1.2rem;font-weight:800;color:var(--navy);"><span class="__cf_email__" data-cfemail="1d74737b725d69786e697064796f746b78337e7270337c68">[email&#160;protected]</span></div>
+            <div style="font-size:0.75rem;color:var(--grey);margin-top:0.1rem;">We reply within 24 hours</div>
+          </div>
+        </a>
+
+        <div style="display:flex;align-items:center;gap:1.25rem;background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:12px;padding:1.5rem;">
+          <div style="width:48px;height:48px;background:var(--navy2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">📍</div>
+          <div>
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);margin-bottom:0.2rem;">Service Area</div>
+            <div style="font-family:var(--condensed);font-size:1.2rem;font-weight:800;color:var(--navy);">South Brisbane &amp; Surrounds</div>
+            <div style="font-size:0.75rem;color:var(--grey);margin-top:0.1rem;">West End · Woolloongabba · Annerley · Moorooka · Greenslopes and more</div>
+          </div>
+        </div>
+
+        <div style="margin-top:0.5rem;text-align:center;">
+          <a href="#" class="btn-primary" onclick="showPage('booking')">Book Online Instead →</a>
+        </div>
+
+        <!-- Map -->
+        <div style="margin-top:2rem;border-radius:12px;overflow:hidden;border:1.5px solid var(--lightgrey);">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d56246.54!2d153.0200!3d-27.5000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1"
+            width="100%"
+            height="300"
+            style="border:0;display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Test My Drive service area — South Brisbane"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       FAQ
+  ════════════════════════════════ -->
+  <div id="page-faq" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Frequently Asked Questions</h2>
+        <p style="color:var(--amber);">Everything you need to know before booking.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How many lessons will I need to pass my test?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It depends on the individual. In Queensland, learner drivers must complete a minimum of 100 logged hours before sitting their practical test. Most students benefit from a mix of private practice with family and professional lessons with an instructor. We'll give you an honest assessment after your first lesson on what we think you'll need.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What areas do you cover?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We cover Logan Central and surrounding suburbs including Marsden, Loganlea, Meadowbrook, Kingston, Waterford, Crestmead, Beenleigh, Browns Plains, Springwood, Sunnybank, Runcorn, Moorooka, Salisbury, Calamvale and more. Not sure if we cover your area? Just get in touch and we will let you know.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you offer manual or automatic lessons?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              All lessons are in an automatic vehicle. This means you will be eligible for an automatic licence on passing your test. If you specifically need manual, get in touch and we can discuss options.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What do I need to bring to my lesson?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Bring your current Queensland learner licence. You must have it on you to legally drive on public roads. Wear comfortable, flat shoes. Your logbook is also useful so we can sign off your hours after each session.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I pay for lessons?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Payment is required before your lesson to secure your booking. Your instructor will be in touch after you enquire to confirm your time and arrange payment. We will confirm all pricing before your first lesson so there are no surprises.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is your cancellation policy?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We ask for at least 24 hours notice if you need to cancel or reschedule. Cancellations with less than 24 hours notice may incur a fee. We understand things come up so just let us know as soon as possible and we will do our best to work with you.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I use your car for my driving test?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. We offer two test day packages that include car hire for your practical test. The Car Test Pack Standard ($210) includes a 45 minute lesson before your test, car hire, and pickup and drop off on weekdays. The Car Test Pack Advanced ($295) includes a 105 minute lesson before your test, car hire, and pickup and drop off on weekdays. Get in touch to book either package.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            I'm a nervous driver, is that okay?
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Completely normal and very common, especially for adult learners. We take a calm, patient approach and never rush. We go at whatever pace makes you comfortable and build confidence gradually. Many of our students started very nervous and passed with flying colours.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:2rem;text-align:center;">
+        <p style="color:var(--grey);font-size:0.85rem;margin-bottom:1rem;">Still got a question? Just get in touch.</p>
+        <a href="#" class="btn-primary" onclick="showPage('booking')">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       BOOKING
+  ════════════════════════════════ -->
+  <div id="page-booking" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Have a Question?</h2>
+        <p>Tell us your suburb and what you need. We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+
+    <div class="booking-section">
+      <div class="booking-inner">
+
+        <div class="trust-bar" style="background:transparent;border:none;padding:0;margin-bottom:2rem;display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:1.5rem;">
+          <div class="trust-item"><span class="icon">⚡</span> Fast response</div>
+          <div class="trust-item"><span class="icon">📞</span> We call to confirm</div>
+          <div class="trust-item"><span class="icon">🗓️</span> Flexible scheduling</div>
+        </div>
+
+        <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b1f2dba0-b055-4ed5-9a1e-3049441b7723" />
+          <input type="hidden" name="subject" value="New Lesson Enquiry — Test My Drive" />
+          <input type="hidden" name="redirect" value="false" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
+          <div class="form-grid">
+            <div class="form-group full">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jane@email.com" required />
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="suburb">Your Suburb</label>
+              <input class="form-input" type="text" id="suburb" name="suburb" placeholder="e.g. West End, Annerley, Woolloongabba..." required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lesson-type">Lesson Type</label>
+              <select class="form-select" id="lesson-type" name="lesson-type" required>
+                <option value="">Select a lesson type</option>
+                <option>1 Hour Car Lesson — $80</option>
+                <option>Car Test Pack Standard — $210</option>
+                <option>Car Test Pack Advanced — $295</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="message">Anything Else?</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us where you're at, e.g. just got your Ls, nervous driver, failed a test, haven't driven in years..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit">Send Enquiry →</button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="tick">✅</div>
+          <h3>Enquiry Sent!</h3>
+          <p>Thanks for getting in touch. We'll be in touch within 24 hours to confirm your booking.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       RESERVE
+  ════════════════════════════════ -->
+  <div id="page-reserve" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Reserve Your Spot</h2>
+        <p style="color:var(--amber);">Pick Your Time</p>
+        <p>Choose a date and time that suits you. We'll be in touch to confirm.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div style="max-width:720px;margin:0 auto;">
+        <div class="calendly-inline-widget"
+          data-url="https://calendly.com/hey_its_leon/reserve-your-spot-driving-lesson?hide_gdpr_banner=1&primary_color=f5a623"
+          style="min-width:320px;height:1200px;border-radius:12px;overflow:hidden;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       LOCATIONS
+  ════════════════════════════════ -->
+  <div id="page-locations" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Driving Lessons Across Logan &amp; Brisbane Southside</h2>
+        <p style="color:var(--amber);">We come to you. Find your area below.</p>
+      </div>
+    </div>
+
+    <div style="max-width:900px;margin:0 auto;padding:3rem 1.5rem;">
+
+      <!-- LOGAN AREA -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Logan City</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <a href="locations/logan-central.html" style="font-size:0.82rem;font-weight:700;color:var(--navy);background:var(--amber);border:1.5px solid var(--amber);border-radius:20px;padding:0.35rem 1rem;text-decoration:none;">Logan Central ↗</a>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Marsden</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Loganlea</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Meadowbrook</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Kingston</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Waterford</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Waterford West</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Logan Reserve</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Crestmead</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Beenleigh</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Bethania</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Holmview</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Edens Landing</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Eagleby</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Loganholme</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Tanah Merah</span>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--lightgrey);margin-bottom:2.5rem;" />
+
+      <!-- BROWNS PLAINS -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Browns Plains &amp; Park Ridge</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Browns Plains</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Hillcrest</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Regents Park</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Boronia Heights</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Heritage Park</span>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--lightgrey);margin-bottom:2.5rem;" />
+
+      <!-- SUNNYBANK -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Sunnybank &amp; Surrounds</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Sunnybank</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Sunnybank Hills</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Macgregor</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Robertson</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Eight Mile Plains</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Runcorn</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Kuraby</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Upper Mount Gravatt</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Wishart</span>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--lightgrey);margin-bottom:2.5rem;" />
+
+      <!-- CALAMVALE -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Calamvale &amp; Forest Lake</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Calamvale</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Stretton</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Drewvale</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Parkinson</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Algester</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Karawatha</span>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--lightgrey);margin-bottom:2.5rem;" />
+
+      <!-- SPRINGWOOD -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Springwood &amp; Underwood</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Springwood</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Slacks Creek</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Daisy Hill</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Underwood</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Shailer Park</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Rochedale</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Rochedale South</span>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid var(--lightgrey);margin-bottom:2.5rem;" />
+
+      <!-- SOUTH BRISBANE -->
+      <div style="margin-bottom:2.5rem;">
+        <div style="font-family:var(--condensed);font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:1rem;">Moorooka &amp; Salisbury</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Moorooka</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Rocklea</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Salisbury</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Coopers Plains</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Acacia Ridge</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Archerfield</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Larapinta</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Tarragindi</span>
+          <span style="font-size:0.82rem;color:var(--grey);background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:20px;padding:0.35rem 1rem;">Nathan</span>
+        </div>
+      </div>
+
+      <!-- NOT LISTED CTA -->
+      <div style="background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:12px;padding:1.5rem;text-align:center;margin-top:1rem;">
+        <p style="font-size:0.88rem;color:var(--grey);margin-bottom:1rem;">Your suburb not listed? We may still be able to help. Just get in touch.</p>
+        <a href="#" onclick="showPage('contact')" class="btn-primary">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       SUBURB — LOGAN CENTRAL
+  ════════════════════════════════ -->
+  <div id="page-suburb-logan-central" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Driving Lessons Logan Central</h2>
+        <p style="color:var(--amber);">Local instructor. Flexible scheduling. We come to you.</p>
+        <p>Learn to drive in your own neighbourhood with a qualified local instructor who knows the roads.</p>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div style="background:var(--offwhite);border-bottom:1px solid var(--lightgrey);padding:2rem 1.5rem;">
+      <div style="max-width:860px;margin:0 auto;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
+          <a href="#" onclick="showPage('instructor')" class="btn-primary" style="display:inline-block;min-width:220px;text-align:center;">Reserve Your Spot</a>
+          <a href="#" onclick="showPage('pricing')" class="btn-outline" style="display:inline-block;min-width:220px;text-align:center;color:var(--navy);border-color:var(--navy);">See Pricing</a>
+          <a href="#" onclick="showPage('booking')" class="btn-outline" style="display:inline-block;min-width:220px;text-align:center;color:var(--navy);border-color:var(--navy);">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local SEO content -->
+    <div class="section">
+      <div style="max-width:720px;margin:0 auto;">
+
+        <h3 style="font-family:var(--condensed);font-size:clamp(1rem,4vw,1.4rem);font-weight:800;color:var(--navy);margin-bottom:1rem;white-space:nowrap;">Learning to Drive in Logan Central</h3>
+        <p style="color:var(--grey);line-height:1.8;margin-bottom:1.25rem;">Logan Central is one of the busiest hubs in the Logan City area, making it an ideal place to build real-world driving skills. From the shopping precinct along Kingston Road to the surrounding residential streets, learners get exposure to a wide range of road conditions in a compact area.</p>
+
+        <h3 style="font-family:var(--condensed);font-size:clamp(1rem,4vw,1.4rem);font-weight:800;color:var(--navy);margin-bottom:1rem;white-space:nowrap;">Local Roads and Test Routes</h3>
+        <p style="color:var(--grey);line-height:1.8;margin-bottom:1.25rem;">Lessons in Logan Central cover everything from quieter residential streets for beginners to busier arterials like Wembley Road and Logan Road for more advanced learners. Our instructor is familiar with the local test routes and focuses on the specific manoeuvres and intersections that examiners look for.</p>
+
+        <h3 style="font-family:var(--condensed);font-size:clamp(1rem,4vw,1.4rem);font-weight:800;color:var(--navy);margin-bottom:1rem;white-space:nowrap;">Flexible Pickup Across Logan Central</h3>
+        <p style="color:var(--grey);line-height:1.8;margin-bottom:1.25rem;">We pick you up from home, school, or wherever suits you in Logan Central and the surrounding area. Lessons are available seven days a week to fit around school, work, and other commitments. Whether you just got your Ls or you're preparing for your practical test, we have a lesson option to suit where you are in the journey.</p>
+
+      </div>
+    </div>
+
+    <!-- Leaflet Map -->
+    <div style="width:100%;height:350px;overflow:hidden;">
+      <div id="map-logan-central" style="width:100%;height:350px;"></div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var map = L.map('map-logan-central', { zoomControl: true, scrollWheelZoom: false }).setView([-27.6395, 153.1045], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.circle([-27.6395, 153.1045], {
+          radius: 1200,
+          color: '#1a1a1a',
+          weight: 2,
+          fillColor: '#1a1a1a',
+          fillOpacity: 0.08
+        }).addTo(map);
+      });
+    </script>
+
+    <!-- Nearby suburbs -->
+    <div style="padding:2rem 1.5rem;text-align:center;">
+      <div style="max-width:720px;margin:0 auto;background:var(--offwhite);border:1.5px solid var(--lightgrey);border-radius:12px;padding:1.25rem 1.5rem;">
+        <div style="font-family:var(--condensed);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin-bottom:0.75rem;">Also Serving Nearby</div>
+        <p style="font-size:0.82rem;color:var(--grey);line-height:1.8;">Woodridge · Kingston · Slacks Creek · Marsden · Loganlea · Meadowbrook · Crestmead · Browns Plains · Runcorn · Sunnybank</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════════════════════
+       BOOK WITH ALI — CALENDLY
+  ════════════════════════════════ -->
+  <div id="page-booking-ali" class="page">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h2>Book With Ali</h2>
+        <p style="color:var(--amber);">Pick a time that suits you.</p>
+        <p>Ali will confirm and give you a quick call before your first lesson.</p>
+      </div>
+    </div>
+    <div style="padding:2rem 1.5rem 3.5rem;">
+      <div style="max-width:860px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:1.5rem;">
+          <a href="#" onclick="showPage('instructor')" style="font-size:0.82rem;color:var(--grey);text-decoration:none;">← Back to Meet Your Instructor</a>
+        </div>
+        <div class="calendly-inline-widget"
+          data-url="https://calendly.com/hey_its_leon/reserve-your-spot-driving-lesson?hide_gdpr_banner=1&primary_color=f5a623"
+          style="min-width:320px;height:820px;border-radius:12px;overflow:hidden;">
+        </div>
+
+        <!-- PRICING BELOW CALENDAR -->
+        <div style="margin-top:3rem;">
+          <div style="text-align:center;margin-bottom:1.5rem;">
+            <div class="section-label">Pricing</div>
+            <div class="section-title">Choose What Works For You</div>
+          </div>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-label">1 Hour Car Lesson</div>
+              <div class="pricing-amount">$80</div>
+              <div class="pricing-duration">per hour · automatic</div>
+              <div class="pricing-desc">Pay as you go. Perfect for a trial lesson or one-off refresher.</div>
+            </div>
+            <div class="pricing-card highlight">
+              <div class="pricing-label">Car Test Pack — Standard</div>
+              <div class="pricing-amount">$210</div>
+              <div class="pricing-duration">test package · weekdays</div>
+              <div class="pricing-desc">45 min lesson before your test, car hire, and pickup and drop off.</div>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-label">Car Test Pack — Advanced</div>
+              <div class="pricing-amount">$295</div>
+              <div class="pricing-duration">test package · weekdays</div>
+              <div class="pricing-desc">105 min lesson before your test, car hire, and pickup and drop off.</div>
+            </div>
+          </div>
+          <p style="color:var(--grey);font-size:0.75rem;margin-top:1rem;text-align:center;">All lessons are automatic transmission. Your instructor will be in touch to confirm your booking and arrange payment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Test My <span>Drive</span></div>
+    <p style="margin-bottom:1.25rem;">South Brisbane &amp; Surrounds · <a href="#" onclick="showPage('booking')">Get in Touch</a></p>
+    <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.25rem;margin-bottom:1rem;">
+      <p style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;">Areas We Serve</p>
+      <p style="font-size:0.72rem;line-height:2;">
+        <a href="locations/logan-central.html" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">Logan City</a>·
+        <a href="#" onclick="showPage('locations')" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">Browns Plains &amp; Park Ridge</a>·
+        <a href="#" onclick="showPage('locations')" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">Sunnybank &amp; Surrounds</a>·
+        <a href="#" onclick="showPage('locations')" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">Calamvale &amp; Forest Lake</a>·
+        <a href="#" onclick="showPage('locations')" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">Springwood &amp; Underwood</a>·
+        <a href="#" onclick="showPage('locations')" style="color:rgba(255,255,255,0.55);text-decoration:none;margin:0 0.4rem;">South Brisbane &amp; Surrounds</a>
+      </p>
+    </div>
+    <p style="font-size:0.7rem;opacity:0.4;">© 2026 Test My Drive. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showPage(name) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + name).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Handle deep links from suburb pages e.g. index.html#booking-ali
+    document.addEventListener('DOMContentLoaded', function() {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById('page-' + hash)) {
+        showPage(hash);
+      }
+    });
+
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    function filterSuburbs(query) {
+      const q = query.toLowerCase().trim();
+      const sections = document.querySelectorAll('.suburb-section');
+      let anyVisible = false;
+      sections.forEach(function(s) {
+        const match = !q || s.dataset.suburb === q;
+        s.style.display = match ? '' : 'none';
+        if (match) anyVisible = true;
+      });
+      document.getElementById('noSuburbResult').style.display = anyVisible ? 'none' : 'block';
+    }
+
+    function submitForm() {}
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('bookingForm');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
+          .then(res => res.json())
+          .then(function(json) {
+            if (json.success) {
+              form.style.display = 'none';
+              document.getElementById('formSuccess').style.display = 'block';
+            } else {
+              alert('Something went wrong. Please call us on 0457 277 629 or email info@testmydrive.com.au');
+            }
+          })
+          .catch(function() {
+            alert('Something went wrong. Please call us on 0457 277 629 or email info@testmydrive.com.au');
+          });
+      });
+    });
+  </script>
+
+  <!-- Sticky mobile enquire button -->
+  <a href="#" id="stickyEnquire" onclick="showPage('booking')"
+     aria-label="Enquire about a driving lesson"
+     style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--amber);color:var(--navy);font-family:var(--body);font-size:1.1rem;font-weight:700;text-align:center;text-decoration:none;padding:1.25rem;letter-spacing:0.03em;box-shadow:0 -2px 12px rgba(0,0,0,0.15);">
+    Enquire Now
+  </a>
+
+  <script>
+    (function() {
+      const btn = document.getElementById('stickyEnquire');
+      const footer = document.querySelector('footer');
+      function update() {
+        const isMobile = window.innerWidth < 768;
+        const nearFooter = footer
+          ? window.scrollY + window.innerHeight >= footer.offsetTop - 80
+          : false;
+        const show = (isMobile && !nearFooter);
+        btn.style.display = show ? 'block' : 'none';
+        document.body.style.paddingBottom = show ? '64px' : '0';
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
+  </script>
+
+</body>
+</html>
