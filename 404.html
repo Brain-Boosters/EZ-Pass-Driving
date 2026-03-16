@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Test My Drive</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:    #0d1f3c;
+      --amber:   #f5a623;
+      --amber2:  #ffc255;
+      --white:   #ffffff;
+      --grey:    #6b7280;
+      --lightgrey: #e5e7eb;
+      --condensed: 'Barlow Condensed', sans-serif;
+      --body:    'Barlow', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--body); background: var(--navy); color: var(--white); min-height: 100vh; display: flex; flex-direction: column; }
+
+    nav {
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem; height: 80px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-logo img { height: 76px; width: auto; display: block; }
+
+    main {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      padding: 3rem 1.5rem; text-align: center;
+    }
+    .inner { max-width: 520px; }
+
+    .code {
+      font-family: var(--condensed);
+      font-size: clamp(5rem, 20vw, 9rem);
+      font-weight: 800;
+      line-height: 1;
+      color: var(--amber);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-family: var(--condensed);
+      font-size: clamp(1.4rem, 5vw, 2rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background: var(--amber); color: var(--navy);
+      font-family: var(--body); font-size: 0.9rem; font-weight: 700;
+      padding: 0.85rem 2rem; border-radius: 6px;
+      text-decoration: none; display: inline-block;
+      transition: background 0.2s;
+      margin: 0.4rem;
+    }
+    .btn-primary:hover { background: var(--amber2); }
+
+    .btn-outline {
+      background: transparent; color: rgba(255,255,255,0.75);
+      font-family: var(--body); font-size: 0.9rem; font-weight: 600;
+      padding: 0.85rem 2rem; border-radius: 6px;
+      text-decoration: none; display: inline-block;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+      margin: 0.4rem;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.5); color: var(--white); }
+
+    .divider {
+      width: 60px; height: 3px;
+      background: var(--amber);
+      margin: 1.5rem auto;
+      border-radius: 2px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/index.html">
+      <img src="/Images/logo.png" alt="Test My Drive" style="height:76px;width:auto;display:block;" />
+    </a>
+  </nav>
+
+  <main>
+    <div class="inner">
+      <div class="code">404</div>
+      <div class="divider"></div>
+      <h1>Page Not Found</h1>
+      <p>The page you are looking for does not exist or may have moved. Head back home or check out our locations.</p>
+      <div>
+        <a href="/index.html" class="btn-primary">Back to Home</a>
+        <a href="/index.html#locations" class="btn-outline">View Locations</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Test My Drive. All rights reserved.</footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main site -->
+  <url>
+    <loc>https://www.testmydrive.com.au/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Suburb pages — add each one as it goes live -->
+  <url>
+    <loc>https://www.testmydrive.com.au/locations/logan-central.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ADD NEXT SUBURB HERE -->
+  <!-- Example:
+  <url>
+    <loc>https://www.testmydrive.com.au/locations/sunnybank.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  -->
+
+</urlset>
