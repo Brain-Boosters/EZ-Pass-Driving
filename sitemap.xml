@@ -40,20 +40,4 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Individual suburb pages — add each one as it goes live -->
-  <url>
-    <loc>https://www.testmydrive.com.au/locations/logan-central.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ADD NEXT SUBURB HERE -->
-  <!--
-  <url>
-    <loc>https://www.testmydrive.com.au/locations/marsden.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
-
 </urlset>
