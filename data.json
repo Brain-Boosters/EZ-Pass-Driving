@@ -1,0 +1,61 @@
+{
+  "instructors": [
+    {
+      "id": "ali",
+      "name": "Ali",
+      "photo": "../Images/Ali.webp",
+      "bio": "Hi, I'm Ali, the founder and instructor here at Test My Drive. I work with everyone from absolute beginners to international drivers getting used to Australian roads and rules. I keep lessons calm, patient, and focused on building real confidence behind the wheel.",
+      "languages": ["English", "Urdu", "Hindi", "Dari", "Persian"],
+      "badges": ["Fully Licensed Instructor", "Blue Card Holder", "Fully Insured", "Automatic Transmission"],
+      "stats": {
+        "lessons": "804",
+        "ratings": "74",
+        "avgRating": "4.6",
+        "languages": "5"
+      },
+      "bookingLink": "../index.html#booking-ali",
+      "suburbs": [
+        "Logan City", "Browns Plains & Park Ridge", "Sunnybank & Surrounds",
+        "Forest Lake & Calamvale", "Springwood & Underwood", "Moorooka & Salisbury",
+        "Logan Central", "Marsden", "Loganlea", "Meadowbrook", "Kingston",
+        "Waterford", "Waterford West", "Logan Reserve", "Crestmead",
+        "Beenleigh", "Bethania", "Holmview", "Edens Landing", "Eagleby",
+        "Loganholme", "Tanah Merah", "Browns Plains", "Hillcrest",
+        "Regents Park", "Boronia Heights", "Heritage Park", "Sunnybank",
+        "Sunnybank Hills", "Macgregor", "Robertson", "Eight Mile Plains",
+        "Runcorn", "Kuraby", "Upper Mount Gravatt", "Wishart", "Calamvale",
+        "Stretton", "Drewvale", "Parkinson", "Algester", "Karawatha",
+        "Springwood", "Slacks Creek", "Daisy Hill", "Underwood",
+        "Shailer Park", "Rochedale", "Rochedale South", "Moorooka",
+        "Rocklea", "Salisbury", "Coopers Plains", "Acacia Ridge",
+        "Archerfield", "Larapinta", "Tarragindi", "Nathan", "Woodridge"
+      ]
+    }
+  ],
+  "pricing": [
+    {
+      "id": "single",
+      "label": "1 Hour Car Lesson",
+      "amount": "$80",
+      "duration": "per hour · automatic",
+      "description": "Pay as you go. Perfect for a trial lesson or one-off refresher.",
+      "highlight": false
+    },
+    {
+      "id": "standard",
+      "label": "Car Test Pack — Standard",
+      "amount": "$210",
+      "duration": "test package · weekdays",
+      "description": "45 min lesson before your test, car hire, and pickup and drop off.",
+      "highlight": true
+    },
+    {
+      "id": "advanced",
+      "label": "Car Test Pack — Advanced",
+      "amount": "$295",
+      "duration": "test package · weekdays",
+      "description": "105 min lesson before your test, car hire, and pickup and drop off.",
+      "highlight": false
+    }
+  ]
+}
